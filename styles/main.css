@@ -8,3 +8,19 @@
     background-color: bisque;
     margin: 10px;
 }
+
+.important-loan{
+    padding: 5px;
+    .linos{
+        height: 10px;
+        width: 10px;
+        &:hover{
+            cursor: grab;
+        }
+    }
+    .mcqueen{
+        height: 20px;
+        width: 30px;
+        visibility: hidden;
+    }
+}
