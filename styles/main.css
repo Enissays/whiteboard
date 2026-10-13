@@ -1,3 +1,10 @@
 .p1-eni {
     color: red;
 }
+
+.isolation-eni {
+    padding: 10px;
+    border: 1 black dotted;
+    background-color: bisque;
+    margin: 10px;
+}
