@@ -26,3 +26,27 @@ function getHugues(self) {
         self.textContent = "👦🏾🔫🔴 PUTAIN PAS LUI AUSSI"
     }
 }
+
+
+function vroom_activation(){
+    setTimeout(()=>{vroom()}, 1000)
+    setTimeout(()=>{document.documentElement.style.setProperty('--visibilite-voiture', 'hidden')}, 2500)
+    document.documentElement.style.setProperty('--visibilite-voiture', 'visible')
+
+}
+
+
+function vroom(){
+    document.getElementById("on-avance").animate(
+    [
+        // keyframes
+        
+        { transform: "translateX(1200px)" }
+    ],
+    {
+        // timing options
+        duration: 1500,
+        iterations: 1,
+    },
+    )
+}

@@ -1,3 +1,8 @@
+:root{
+    --visibilite-voiture: hidden;
+}
+
+
 .p1-eni {
     color: red;
 }
@@ -16,15 +21,15 @@
 .important-loan{
     padding: 5px;
     .linos{
-        height: 10px;
-        width: 10px;
+        height: 20px;
+        width:20px;
         &:hover{
             cursor: grab;
         }
     }
     .mcqueen{
-        height: 20px;
-        width: 30px;
-        visibility: hidden;
+        height: 40px;
+        width: 60px;
+        visibility: var(--visibilite-voiture);
     }
 }
