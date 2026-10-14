@@ -9,6 +9,10 @@
     margin: 10px;
 }
 
+.flex-eni {
+    display: flex;
+}
+
 .important-loan{
     padding: 5px;
     .linos{
