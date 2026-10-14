@@ -44,7 +44,7 @@ function vroom(){
     [
         // keyframes
         
-        { transform: "translateX(1200px)" }
+        { transform: "translateX(100vw)" }
     ],
     {
         // timing options
