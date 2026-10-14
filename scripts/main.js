@@ -74,3 +74,7 @@ function bigsound() {
     sound.volume = 1.0;
     sound.play();
 }
+
+function nosound() {
+    bigsound()
+}
