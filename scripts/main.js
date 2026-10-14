@@ -7,6 +7,26 @@ function killTheo() {
     consigne.textContent = "adieu theo ptn.."
 }
 
+// Le code de hugues
+var count = 5;
+
+function getHugues(self) {
+    const elements = [...document.body.getElementsByTagName("*")];
+    const filteredElements = elements.filter(elt => elt.innerHTML && elt.nodeName != "BR" && elt.nodeName != "IMG" && elt.id != "consigne" && elt.id != "hugues-count" && elt.id != "isolation-eni");
+    var randomIndex = Math.round(Math.random() * filteredElements.length);
+    console.log(filteredElements[randomIndex].nodeName);
+    filteredElements[randomIndex].innerHTML += "<span id=\"hugues\" onclick=\"getHugues(this)\">👦🏾</span>";
+
+    count--; 
+    if (count > 0) {
+        const counter = document.getElementById("hugues-count");
+        counter.textContent = count;
+        self.remove();
+    } else {
+        self.textContent = "👦🏾🔫🔴 PUTAIN PAS LUI AUSSI"
+    }
+}
+
 
 function vroom_activation(){
     setTimeout(()=>{vroom()}, 1000)
@@ -30,4 +50,3 @@ function vroom(){
     },
     )
 }
-
