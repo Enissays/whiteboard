@@ -63,8 +63,8 @@ function spinfast(image) {
             { transform: "rotate(360deg)" }
         ],
         {
-            duration: 100,
-            iterations: 100
+            duration: 500,
+            iterations: 10
         }
     );
 }
