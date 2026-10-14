@@ -1,3 +1,8 @@
+:root{
+    --visibilite-voiture: hidden;
+}
+
+
 .p1-eni {
     color: red;
 }
@@ -21,6 +26,6 @@
     .mcqueen{
         height: 20px;
         width: 30px;
-        visibility: hidden;
+        visibility: var(--visibilite-voiture);
     }
 }
