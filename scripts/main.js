@@ -76,5 +76,7 @@ function bigsound() {
 }
 
 function nosound() {
-    bigsound()
+    setTimeout(function(){
+        bigsound();
+    }, 3000);
 }
