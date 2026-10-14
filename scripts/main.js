@@ -30,14 +30,17 @@ function getHugues(self) {
 
 function vroom_activation(){
     setTimeout(()=>{vroom()}, 1000)
-    setTimeout(()=>{document.documentElement.style.setProperty('--visibilite-voiture', 'hidden')}, 2500)
+    setTimeout(()=>{document.documentElement.style.setProperty('--visibilite-voiture', 'hidden')}, 5000)
     document.documentElement.style.setProperty('--visibilite-voiture', 'visible')
 
 }
 
+candidats = ["candidat-1", "candidat-2", "candidat-3"]
 
 function vroom(){
-    document.getElementById("on-avance").animate(
+    for(let i = 0; i < 3; i++){
+        let vitesse = Math.random() * (3000 - 1000) + 1000
+        document.getElementById(candidats[i]).animate(
     [
         // keyframes
         
@@ -45,8 +48,9 @@ function vroom(){
     ],
     {
         // timing options
-        duration: 1500,
+        duration: vitesse,
         iterations: 1,
     },
     )
+    }
 }

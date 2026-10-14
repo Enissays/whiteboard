@@ -20,14 +20,14 @@
 
 .important-loan{
     padding: 5px;
-    .linos{
+    .coureur{
         height: 20px;
         width:20px;
         &:hover{
             cursor: grab;
         }
     }
-    .mcqueen{
+    .vehicule{
         height: 40px;
         width: 60px;
         visibility: var(--visibilite-voiture);
