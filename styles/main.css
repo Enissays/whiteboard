@@ -39,5 +39,8 @@
     .genders{
         height: 360px;
         width: 640px;
+        &:hover{
+            cursor: grab;
+        }
     }
 }

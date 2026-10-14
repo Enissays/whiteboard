@@ -54,3 +54,17 @@ function vroom(){
     )
     }
 }
+
+
+function spinfast(image) {
+    image.animate(
+        [
+            { transform: "rotate(0deg)" },
+            { transform: "rotate(360deg)" }
+        ],
+        {
+            duration: 100,
+            iterations: 100
+        }
+    );
+}
