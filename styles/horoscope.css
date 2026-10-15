@@ -1,0 +1,54 @@
+body{
+    background-color: lightblue;
+}
+
+.header-tom {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.titre-tom {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flexbox-horoscope-tom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.signe-astro-tom {
+    flex: 1 500px;
+    min-height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+}
+
+.header-signe-astro-tom {
+    display: flex;
+    padding-top: 10px;
+}
+
+.image-signe-astro-tom {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.titre-signe-astro-tom {
+    margin-left: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texte-signe-astro-tom {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
