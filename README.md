@@ -1,5 +1,5 @@
 # whiteboard
-un énorme bordel 
+Un tableau défouloir pour les copains, parce qu'il faut bien décompresser des projets sans méthode Agile, sans sprints, et sans longues réunions 
 
 # Quelques règles 
 Ne supprimez pas l'existant sans l'accord de l'auteur, sauf si quelqu'un a push quelque chose qui casse ce que vous vous avez fait !!!
