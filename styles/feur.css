@@ -1,0 +1,8 @@
+@font-face {
+    font-family : love;
+    src: url(fonts/Love.ttf);
+}
+
+body {
+    font-family: 'love', sans-serif;
+}
