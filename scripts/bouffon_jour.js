@@ -64,7 +64,7 @@ var image = document.createElement("img");
 var imageParent = document.getElementById("bouffon");
 image.id = "id";
 image.className = "class";
-image.src = "img/gens/" + gens[randomBouffon].img;
+image.src = "./img/gens/" + gens[randomBouffon].img;
 imageParent.appendChild(image);
 
 var bouffonTitle = document.getElementById("title-bouffon");
