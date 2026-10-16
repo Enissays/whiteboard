@@ -14,8 +14,22 @@
     margin: 10px;
 }
 
+.isolation-eni-2 {
+    border: 1 black dotted;
+    background-color: rgb(0, 121, 154);
+    margin: 10px;
+    padding: 0 15% 0 15%;
+    border-radius: 10%;
+}
 .flex-eni {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center * {
+    text-align: center;
+
 }
 
 .important-loan{
@@ -43,4 +57,24 @@
             cursor: grab;
         }
     }
+}
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    background-color: #87e284;
+    border: 1px solid #074505;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+#title-bouffon {
+    color: #eef2ee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cite {
+    font-style: italic;
+    font-size: larger;
+    color: white;
 }
