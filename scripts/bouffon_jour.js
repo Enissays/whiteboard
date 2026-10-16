@@ -7,49 +7,49 @@
 var gens = [
     {
         "name" : "Hugo",
-        "img" : "hugo.png",
+        "img" : "Hugo.png",
         "gen" : "F",
         "description" : "\"PUREE MAIS C'EST N'IMPORTE QUOI CE TRUC??\""
     },
     {
         "name" : "Tom",
-        "img" : "poupou.png",
+        "img" : "Poupou.png",
         "gen" : "M",
         "description" : "\"oh mais c'est genial\""
     },
     {
         "name" : "Arthur",
-        "img" : "arthur.png",
+        "img" : "Arthur.png",
         "gen" : "M",
         "description" : "\"Maintenant, devinez ce drapeau\""
     },
     {
         "name" : "Emma",
-        "img" : "emma.png",
+        "img" : "Emma.png",
         "gen" : "F",
         "description" : "\"Mais c'est terrifiant..?\""
     },
     {
         "name" : "Eni",
-        "img" : "eni.png",
+        "img" : "Eni.png",
         "gen" : "M",
         "description" : "\"À fortiori, cela va de soi\""
     },
     {
         "name" : "Elea-Rose",
-        "img" : "elea.png",
+        "img" : "Elea.png",
         "gen" : "F",
         "description" : "\"FEUUUUUUUR\""
     },
     {
         "name" : "Kevin",
-        "img" : "kevin.png",
+        "img" : "Kevin.png",
         "gen" : "M",
         "description" : "\"Hmm, est ce que ça contribue au redressement des finances d'Anim'Est ? \""
     },
     {
         "name" : "Loan",
-        "img" : "loan.png",
+        "img" : "Loan.png",
         "gen" : "F",
         "description" : "\"Je me demande ce qu'en pense Seong Ji-Hun...\""
     }
