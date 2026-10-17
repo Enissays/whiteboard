@@ -1,5 +1,9 @@
 :root{
+    --visibilite-course: none;
     --visibilite-voiture: hidden;
+    --choix-coureur-1: hidden;
+    --choix-coureur-2: hidden;
+    --choix-coureur-3: hidden;
 }
 
 
@@ -34,18 +38,73 @@
 
 .important-loan{
     padding: 5px;
-    .coureur{
-        height: 20px;
-        width:20px;
+    position: relative;
+    .ouvrir-course{
+        font-size: 300%;
         &:hover{
-            cursor: grab;
+            cursor: pointer;
         }
     }
-    .vehicule{
-        height: 40px;
-        width: 60px;
-        visibility: var(--visibilite-voiture);
+    .course{
+        display: var(--visibilite-course);
+        position: absolute;
+        width: 90vw;
+        height: 300px;
+        padding: 1rem 0.5rem;
+        background-color: rgb(191, 250, 195);    
+        .pari{
+            display: flex;
+            .choix-coureurs{
+                &:hover{
+                    cursor: pointer;
+                }
+                .choix-coureur-1{
+                    height: 20px;
+                    width:20px;
+                    border-style: var(--choix-coureur-1);
+                    border-color: red;
+                }
+                .choix-coureur-2{
+                    height: 20px;
+                    width:20px;
+                    border-style: var(--choix-coureur-2);
+                    border-color: red;
+                }
+                .choix-coureur-3{
+                    height: 20px;
+                    width:20px;
+                    border-style: var(--choix-coureur-3);
+                    border-color: red;
+                }
+            }
+            .erreur-demarrage{
+                color: red;
+            }
+        }
+        .contestants{
+            .coureur{
+                height: 20px;
+                width:20px;
+                &:hover{
+                    cursor: grab;
+                }
+            }
+            .vehicule{
+                height: 40px;
+                width: 60px;
+                visibility: var(--visibilite-voiture);
+            }
+        }
+        .close-course{
+            display: flex;
+            justify-content: right;
+            color : red;
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
+
 }
 
 .machin_bidule-arthur{
@@ -78,3 +137,6 @@ h1 {
     font-size: larger;
     color: white;
 }
+
+
+

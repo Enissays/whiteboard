@@ -29,19 +29,42 @@
         </div>
     </div>
     <div class="important-loan">
-        <div class="course">
-            <div id="candidat-1">
-                <img class="coureur" onclick="vroom_activation()" src="img/linos.jpg"> <br>
-                <img class="vehicule" src="img/mcqueen.png">
+        <div class="course" >
+            <div class="close-course" onclick="document.documentElement.style.setProperty('--visibilite-course', 'none')">
+                x
             </div>
-            <div id="candidat-2">
-                <img class="coureur" onclick="vroom_activation()" src="img/spiderman.png"> <br>
-                <img class="vehicule" src="img/rainbowdash.png">
+            <div id="dabloons"></div>
+            <div class ="pari" >
+                <div>Je parie &nbsp; </div>
+                <input type="number" id="numb_dabl" min="1" :max="var(--)">
+                <div> &nbsp; Dabloons sur coureur &nbsp; </div>
+                <div class="choix-coureurs"> 
+                    &nbsp;<img class="choix-coureur-1" onclick="select_coureur(1)" src="img/course/linos.jpg">&nbsp;
+                    &nbsp;<img class="choix-coureur-2" onclick="select_coureur(2)" src="img/course/spiderman.png">&nbsp;
+                    &nbsp;<img class="choix-coureur-3" onclick="select_coureur(3)" src="img/course/sadhamster.png">&nbsp;
+                </div>
+                <input type="button" value="C'est parti !" onclick="commencer_course()">
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="erreur-demarrage" id="erreur-demarrage"></div>
             </div>
-            <div id="candidat-3">
-                <img class="coureur" onclick="vroom_activation()" src="img/sadhamster.png"> <br>
-                <img class="vehicule" src="img/oiseau.png">
+            <div class="contestants">
+                <div id="candidat-1">
+                    <img class="coureur" onclick="vroom_activation()" src="img/course/linos.jpg"> <br>
+                    <img class="vehicule" src="img/course/mcqueen.png">
+                </div>
+                <div id="candidat-2">
+                    <img class="coureur" onclick="vroom_activation()" src="img/course/spiderman.png"> <br>
+                    <img class="vehicule" src="img/course/rainbowdash.png">
+                </div>
+                <div id="candidat-3">
+                    <img class="coureur" onclick="vroom_activation()" src="img/course/sadhamster.png"> <br>
+                    <img class="vehicule" src="img/course/oiseau.png">
+                </div>
+                <div id="gagnant"></div>
             </div>
+        </div>
+        <div class="ouvrir-course" onclick="ouverture_course()">
+            🏎️
         </div>
     </div>
     <div class="machin_bidule-arthur">
