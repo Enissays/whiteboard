@@ -1,0 +1,10 @@
+.machin_bidule-arthur{
+    padding: 5px;
+    .genders{
+        height: 360px;
+        width: 640px;
+        &:hover{
+            cursor: grab;
+        }
+    }
+}
