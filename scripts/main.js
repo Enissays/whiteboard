@@ -93,7 +93,11 @@ function commencer_course(){
         document.getElementById("erreur-demarrage").innerHTML = "Pas de coureur choisi !";
         setTimeout(()=>{document.getElementById("erreur-demarrage").innerHTML = "";}, 3000);
     }
-    else if(dabloons - mise < 0 || mise <= 0){
+    else if(mise <= 0){
+        document.getElementById("erreur-demarrage").innerHTML = "Mise incorrecte !";
+        setTimeout(()=>{document.getElementById("erreur-demarrage").innerHTML = "";}, 3000);
+    }
+    else if(dabloons - mise < 0){
         document.getElementById("erreur-demarrage").innerHTML = "Pas assez de Dabloons !";
         setTimeout(()=>{document.getElementById("erreur-demarrage").innerHTML = "";}, 3000);
     }
