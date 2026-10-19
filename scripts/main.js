@@ -66,7 +66,7 @@ function select_coureur(n){
 
 function commencer_course(){
     let mise = document.getElementById("numb_dabl").value
-    if(coureur != -1 && course_possible && dabloons - mise >= 0){
+    if(coureur != -1 && course_possible && dabloons - mise >= 0 && mise > 0){
         course_possible = false
         dabloons = dabloons - mise
         let vitesses = []
@@ -93,7 +93,7 @@ function commencer_course(){
         document.getElementById("erreur-demarrage").innerHTML = "Pas de coureur choisi !";
         setTimeout(()=>{document.getElementById("erreur-demarrage").innerHTML = "";}, 3000);
     }
-    else if(dabloons - mise < 0){
+    else if(dabloons - mise < 0 || mise <= 0){
         document.getElementById("erreur-demarrage").innerHTML = "Pas assez de Dabloons !";
         setTimeout(()=>{document.getElementById("erreur-demarrage").innerHTML = "";}, 3000);
     }
