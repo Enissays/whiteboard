@@ -36,10 +36,6 @@ if(localStorage.getItem("firstConnexion") != "true"){
     localStorage.setItem("date", "")
 }
 
-if(localStorage.getItem("ARTHURPUTAIN") != "..."){
-    localStorage.setItem("dabloons", "10")
-}
-
 let dabloons = Number(localStorage.getItem("dabloons")) 
 let coureur = -1;
 candidats = ["candidat-1", "candidat-2", "candidat-3"]
