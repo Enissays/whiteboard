@@ -28,11 +28,17 @@ function getHugues(self) {
 }
 
 // code de la course 
-let dabloons = 10;
+if(localStorage.getItem("firstConnexion") != "true"){
+    localStorage.setItem("firstConnexion", "true")
+    localStorage.setItem("dabloons", "10")
+}
+
+let dabloons = Number(localStorage.getItem("dabloons")) 
 let coureur = -1;
 candidats = ["candidat-1", "candidat-2", "candidat-3"]
 nom_candidats = ["Linos", "Spiderman", "Hamster"]
 let course_possible = true
+
 
 function ouverture_course(){
     document.documentElement.style.setProperty('--visibilite-course', 'absolute');
@@ -46,6 +52,7 @@ function ouverture_course(){
 function update_dabloons(){
     document.getElementById("dabloons").innerHTML = `Dabloons : ${dabloons}`;
     document.getElementById("numb_dabl").max = dabloons
+    localStorage.setItem("dabloons", dabloons.toString())
 }
 
 function select_coureur(n){
