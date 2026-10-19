@@ -28,9 +28,12 @@ function getHugues(self) {
 }
 
 // code de la course 
+let date = new Date()
+const jour = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
 if(localStorage.getItem("firstConnexion") != "true"){
     localStorage.setItem("firstConnexion", "true")
     localStorage.setItem("dabloons", "10")
+    localStorage.setItem("date", "")
 }
 
 let dabloons = Number(localStorage.getItem("dabloons")) 
@@ -129,6 +132,20 @@ function vroom(vitesses){
     )
     }
 }
+
+//
+function cadeau_quotidien(){
+    if(localStorage.getItem("date") != jour){
+        let bonus = Math.floor(Math.random() * 3 + 1)
+        dabloons += bonus
+        update_dabloons()
+        localStorage.setItem("date", jour)
+    }
+}
+
+
+
+
 
 
 function spinfast(image) {

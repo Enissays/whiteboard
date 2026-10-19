@@ -39,10 +39,20 @@
 .important-loan{
     padding: 5px;
     position: relative;
-    .ouvrir-course{
-        font-size: 300%;
-        &:hover{
-            cursor: pointer;
+    .ligne-dabloons{
+        display: flex;
+        .ouvrir-course{
+            font-size: 300%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .cadeau-quot{
+            font-size: 300%;
+            display: flex;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     .course{

@@ -11,9 +11,11 @@ N'hésitez pas à demander à vos pairs des conseils sur votre code, ça peut ê
 
 
 # TODO LOAN
-- [ ] Mettre plusieurs véhicules, tu bet sur l'un des participants, si tu choisis le plus rapide tu gagnes un dabloon    (vitesses aléatoires)
+- [x] Mettre plusieurs véhicules, tu bet sur l'un des participants, si tu choisis le plus rapide tu gagnes un dabloon    (vitesses aléatoires)
 - [ ] Pouvoir applaudir pendant la course? (ne changera rien à l'outcome)
-- [ ] Audio à rajouter
+- [x] Audio à rajouter
+- [x] Cadeau quotidien
+- [ ] Afficher résultat du cadeau quotidien
 - [ ] Quand tout ça sera fait : faire un procès à TobyFox parce qu'il a piqué mon idée pour le mettre dans son jeu là avec un nom de merde.... undertale je crois?
 
 
