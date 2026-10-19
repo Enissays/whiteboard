@@ -31,12 +31,12 @@ function getHugues(self) {
 let dabloons = 10;
 let coureur = -1;
 candidats = ["candidat-1", "candidat-2", "candidat-3"]
+nom_candidats = ["Linos", "Spiderman", "Hamster"]
 let course_possible = true
 
 function ouverture_course(){
     document.documentElement.style.setProperty('--visibilite-course', 'absolute');
     document.getElementById("gagnant").innerHTML = "";
-    dabloons++;
     update_dabloons()
     document.getElementById("numb_dabl").value = 1
     document.documentElement.style.setProperty('--choix-coureur-'+coureur , 'hidden')
@@ -70,7 +70,6 @@ function commencer_course(){
                 gagnant = i+1
             }
         }
-        console.log(vitesses)
         vroom_activation(vitesses)
         if(gagnant === coureur){
             dabloons = dabloons + mise * 2
@@ -102,7 +101,7 @@ function vroom_activation(vitesses){
         sound.volume = 1.0;
         sound.play();
     }, 1000)
-    setTimeout(()=>{course_possible = true}, 4000)
+    setTimeout(()=>{course_possible = true}, 5000)
     setTimeout(()=>{document.documentElement.style.setProperty('--visibilite-voiture', 'hidden')}, 5000)
     document.documentElement.style.setProperty('--visibilite-voiture', 'visible');
 }
