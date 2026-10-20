@@ -28,8 +28,9 @@ function getHugues(self) {
 }
 
 // code de la course 
-let date = new Date()
-const jour = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
+let date = new Date() 
+// LA CONSTANTE EN VRAI SERT PLUS A GRAND CHOSE SI ON A PLUSIEURS CADEAUX QUOTIDIENS
+const jour = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() 
 if(localStorage.getItem("firstConnexion") != "true"){
     localStorage.setItem("firstConnexion", "true")
     localStorage.setItem("dabloons", "10")
@@ -144,6 +145,19 @@ function cadeau_quotidien(){
         dabloons += bonus
         update_dabloons()
         localStorage.setItem("date", jour)
+        if(bonus == 1){
+            document.getElementById("message-cadeau").innerHTML = "Vous avez gagné " + bonus.toString() + " Dabloon !";
+            setTimeout(()=>{document.getElementById("message-cadeau").innerHTML = "";}, 3000);
+        }
+        else{
+            document.getElementById("message-cadeau").innerHTML = "Vous avez gagné " + bonus.toString() + " Dabloons !";
+            setTimeout(()=>{document.getElementById("message-cadeau").innerHTML = "";}, 3000);
+        }
+        
+    }
+    else{
+        document.getElementById("message-cadeau").innerHTML = "Vous avez déjà récupéré votre bonus aujourd'hui !";
+        setTimeout(()=>{document.getElementById("message-cadeau").innerHTML = "";}, 3000);
     }
 }
 

@@ -54,6 +54,12 @@
                 cursor: pointer;
             }
         }
+        .message-cadeau{
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .course{
         display: var(--visibilite-course);
