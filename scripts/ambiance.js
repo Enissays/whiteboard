@@ -37,7 +37,7 @@ function spin_heli(image) {
 function morph(image) {
     image.src = "img/arthur/flag_fr.png";
     spinfast(image);
-    let sound = new Audio('sounds/arthur/hymne_fr');
+    let sound = new Audio('sounds/arthur/hymne_fr.mp3');
     sound.volume = 1.0;
     sound.play();
 }
