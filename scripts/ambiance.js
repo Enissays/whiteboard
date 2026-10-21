@@ -12,13 +12,13 @@ function spinfast(image) {
 }
 
 function helicopter_helicopter() {
-    let sound = new Audio('sounds/helice.ogg');
+    let sound = new Audio('sounds/arthur/helice.ogg');
     sound.volume = 1.0;
     sound.play();
 }
 
 function bigsound() {
-    let sound = new Audio('sounds/BOUM.mp3');
+    let sound = new Audio('sounds/arthur/BOUM.mp3');
     sound.volume = 1.0;
     sound.play();
 }
@@ -32,4 +32,12 @@ function nosound() {
 function spin_heli(image) {
     spinfast(image);
     helicopter_helicopter();
+}
+
+function morph(image) {
+    image.src = "img/arthur/flag_fr.png";
+    spinfast(image);
+    let sound = new Audio('sounds/arthur/hymne_fr');
+    sound.volume = 1.0;
+    sound.play();
 }
