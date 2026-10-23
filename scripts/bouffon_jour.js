@@ -70,8 +70,9 @@ imageParent.appendChild(image);
 var bouffonTitle = document.getElementById("title-bouffon");
 bouffonTitle.textContent = gens[randomBouffon].name;
 
-var bouffonHeader = document.getElementById("header-bouffon");
-if (gens[randomBouffon].gen == "F") bouffonHeader.textContent = "Bouffonne du jour";
+// HALLOWEEN
+// var bouffonHeader = document.getElementById("header-bouffon");
+// if (gens[randomBouffon].gen == "F") bouffonHeader.textContent = "Bouffonne du jour";
 
 var p = document.createElement("p");
 p.id = "cite";

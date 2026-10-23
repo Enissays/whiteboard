@@ -18,9 +18,15 @@ function showBalance() {
     texte.textContent = "Né de la fusion du service financier et du service informatique, nous avons la joie et l’honneur de vous présenter Robin Bouthier, un bébé 100 % Telecom, qui a pointé le bout de son nez lundi 12 octobre à 20h33. Robin et sa maman se portent bien. Et, fait suffisamment rare pour être souligné, le papa a lâché son clavier pour se consacrer pleinement au pouponnage !"
 }
 
+// function showScorpion() { HALLOWEEN
+//     const texte = document.getElementById("texte-Scorpion");
+//     texte.textContent = "YES I BOUG MWEN ..! m'en Blanc , mais grand maman mwen ka rété Martinique ... pou mwen pani diférence ... les antilles c'est les antilles ...! Pani chèn en pied a présen .... En ké Ba'w fos pou Tiré drapo là sa !!!! bleu blanc rouge  ka sévi divisé !! Big up pou tou moun ki ni le yé ouvé ! tché bey boug mwen !"
+// }
+
+
 function showScorpion() {
     const texte = document.getElementById("texte-Scorpion");
-    texte.textContent = "YES I BOUG MWEN ..! m'en Blanc , mais grand maman mwen ka rété Martinique ... pou mwen pani diférence ... les antilles c'est les antilles ...! Pani chèn en pied a présen .... En ké Ba'w fos pou Tiré drapo là sa !!!! bleu blanc rouge  ka sévi divisé !! Big up pou tou moun ki ni le yé ouvé ! tché bey boug mwen !"
+    texte.textContent = "Makin' up a song about Coraline She's a peach, she's a doll, she's a pal of mine She's as cute as a button in the eyes of everyone who's ever laid their eyes on Coraline When she comes around exploring Mom and I will never ever make it boring Our eyes will be on Coraline!"
 }
 
 function showPoissons() {

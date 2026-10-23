@@ -3,7 +3,8 @@ console.log("Le script fonctionne");
 function killTheo() {
     const theo = document.getElementById("theo");
     const consigne = document.getElementById("consigne");
-    theo.textContent = "👨🏼🔫🔴 NOOOOOON THEO PUREE QU'EST CE QUE T'AS FAIT IL EST MORT JUSTE ";
+    // theo.textContent = "👨🏼🔫🔴 NOOOOOON THEO PUREE QU'EST CE QUE T'AS FAIT IL EST MORT JUSTE "; HALLOWEEN
+    theo.textContent = "👻🔫🔴 NOOOOOON THEO PUREE QU'EST CE QUE T'AS FAIT IL EST MORT JUSTE ";
     consigne.textContent = "adieu theo ptn.."
 }
 
@@ -15,7 +16,8 @@ function getHugues(self) {
     const filteredElements = elements.filter(elt => elt.innerHTML && elt.nodeName != "BR" && elt.nodeName != "IMG" && elt.id != "consigne" && elt.id != "hugues-count" && elt.id != "isolation-eni");
     var randomIndex = Math.round(Math.random() * filteredElements.length);
     console.log(filteredElements[randomIndex].nodeName);
-    filteredElements[randomIndex].innerHTML += "<span id=\"hugues\" onclick=\"getHugues(this)\">👦🏾</span>";
+    // filteredElements[randomIndex].innerHTML += "<span id=\"hugues\" onclick=\"getHugues(this)\">👦🏾</span>"; HALLOWEEN
+    filteredElements[randomIndex].innerHTML += "<span id=\"hugues\" onclick=\"getHugues(this)\">🎃</span>";
 
     count--; 
     if (count > 0) {
@@ -23,7 +25,9 @@ function getHugues(self) {
         counter.textContent = count;
         self.remove();
     } else {
-        self.textContent = "👦🏾🔫🔴 PUTAIN PAS LUI AUSSI"
+        // self.textContent = "👦🏾🔫🔴 PUTAIN PAS LUI AUSSI" HALLOWEEN
+        self.textContent = "🎃🔫🔴 PUTAIN PAS LUI AUSSI" 
+
     }
 }
 

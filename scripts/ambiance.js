@@ -35,9 +35,11 @@ function spin_heli(image) {
 }
 
 function morph(image) {
-    image.src = "img/arthur/flag_fr.png";
+    // image.src = "img/arthur/flag_fr.png"; HALLOWEEN
+    image.src = "fetes/halloween/flag.jpg"
     spinfast(image);
-    let sound = new Audio('sounds/arthur/hymne_fr.mp3');
+    // let sound = new Audio('sounds/arthur/hymne_fr.mp3'); HALLOWEEN
+    let sound = new Audio('fetes/halloween/poto.mp3');
     sound.volume = 1.0;
     sound.play();
 }
