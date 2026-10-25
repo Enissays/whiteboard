@@ -1,0 +1,181 @@
+:root{
+    --visibilite-start: flex;
+    --visibilite-rules: none;
+    --visibilite-level1: none;
+    --visibilite-loser: none;
+    --visibilite-victory: none;
+}
+
+@font-face {
+    font-family: MatchaStyle;
+    src: url("../fonts/Matcha Style.ttf");
+}
+
+body{
+    background-color: lightblue;
+}
+
+.main-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Arrière-plan*/
+
+#background-screen {
+    display: block;
+}
+
+.image-cuisine {
+    width: 100vw;
+    height: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+/*Infos de jeu*/
+
+#info-screen {
+    display: block;
+}
+
+.level-text {
+    font-family: MatchaStyle;
+    font-size:25px;
+    position: absolute;
+    top: 0%;
+    left: 30px;
+}
+
+.lives-text {
+    font-family: MatchaStyle;
+    font-size:25px;
+    position: absolute;
+    top: 0%;
+    right: 30px;
+}
+
+/*Menu start*/
+
+#start-screen {
+    display: var(--visibilite-start);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 350px;
+    height: 275px;
+    background-color: rgb(251 202 97 / 80%);
+    border: solid 8px;
+    border-color: rgb(0 0 0);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
+    min-width: 200px;
+    min-height: 75px;
+    background-color:rgb(0 189 157);
+    border: solid 6px;
+    border-color: black;
+    border-radius: 50px;
+    font-family: MatchaStyle;
+    font-size:40px;
+}
+
+.start-button:hover {
+    background-color: rgb(114 219 200);
+}
+
+.title {
+    font-family: MatchaStyle;
+    font-size:33px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Menu des règles*/
+
+#rules-screen {
+    display: var(--visibilite-rules);
+    align-items: center;
+    justify-content: center;
+}
+
+.rules-container {
+    width: 350px;
+    height: fit-content;
+    background-color: rgb(251 202 97 / 80%);
+    border: solid 8px;
+    border-color: rgb(0 0 0);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rules-title {
+    font-family: MatchaStyle;
+    font-size:33px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.rules-text {
+    font-family: MatchaStyle;
+    font-size:20px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Level 1*/
+
+#game-screen-level1 {
+    display: var(--visibilite-level1);
+}
+
+.oeuf {
+    display: block;
+    position: absolute;
+    left: calc(50vw - calc(100px + 50px));
+    top: 200px;
+    height: 100px;
+    width: 100px;
+}
+
+.saladier {
+    display: block;
+    position: absolute;
+    top: 450px;
+    height: 79px;
+}
+
+/*Loser screen*/
+
+#loser-screen {
+    display: var(--visibilite-loser);
+    align-items: center;
+    justify-content: center;
+}
+
+/*Victory Screen*/
+
+#victory-screen {
+    display: var(--visibilite-victory);
+    align-items: center;
+    justify-content: center;
+}
