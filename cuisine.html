@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'est le SITE</title>
+
+    <link rel="stylesheet" href="styles/cuisine.css">
+    <script type="text/javascript" src="scripts/cuisine.js"></script>
+</head>
+<body>
+    <div class="main-container" id="background-screen">
+        <img class="image-cuisine" src="img/tom/cuisine/cuisine.jpg">
+    </div>
+    <div class="main-container" id="info-screen">
+        <p class="level-text">Niveau <span id="level">1</span></p>
+        <p class="lives-text">Vies : <span id="lives">2</span></p>
+    </div>
+    <div class="main-container" id="start-screen">
+        <div class="menu">
+            <p class="title">Envie d'apprendre à cuisiner ?</p>
+            <button class="start-button" onclick=start()>Start</button>
+        </div>
+    </div>
+    <div class="main-container" id="rules-screen">
+        <div class="rules-container">
+            <p class="rules-title">Niveau <span id="level">1</span> :</p>
+            <p class="rules-text" id="rules-text">Test</p>
+        </div>
+    </div>
+    <div class="main-container" id="game-screen-level1">
+        <img class="oeuf" src="img/tom/cuisine/oeuf1.png">
+        <img class="oeuf" src="img/tom/cuisine/oeuf1.png">
+        <img class="oeuf" src="img/tom/cuisine/oeuf1.png">
+        <img class="oeuf" src="img/tom/cuisine/oeuf1.png">
+        <img class="oeuf" src="img/tom/cuisine/oeuf1.png">
+        <img class="saladier" id="follow" src="img/tom/cuisine/saladier.png">
+        <script src="scripts/follow_mouse_tom.js"></script>
+    </div>
+    <div class="main-container" id="loser-screen">
+        <div class="rules-container">
+            <p class="rules-text">Haha loser mdrrr</p>
+        </div>
+    </div>
+    <div class="main-container" id="victory-screen">
+        <div class="rules-container">
+            <p class="rules-text">Bravo ! Le niveau 2 arrive soon</p>
+        </div>
+    </div>
+</body>
+</html>
