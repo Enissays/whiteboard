@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <img class="snow" style="position:absolute;width:99%;pointer-events:none;" src="fetes/noel/snow.gif"> <!-- NOEL-->
     <span class="p1-eni">Hugo je t'aime</span>
     <div class="flex-eni center">
     <div id="bouffon" class="isolation-eni-2">
-        <!-- <h1 id="header-bouffon">Bouffon du jour</h1> ANIMEST  -->
-         <h1 id="header-bouffon">Respo du jour</h1>
+        <!-- <h1 id="header-bouffon">Bouffon du jour</h1> NOEL  -->
+         <h1 id="header-bouffon">Lutin du jour</h1>
 
         <h2 id="title-bouffon"></h2>
     </div>
@@ -20,14 +21,14 @@
     <div class="flex-eni">
         <div class="isolation-eni">
             <span>Voici théo</span> <br>
-            <!-- <span id="theo" onclick="killTheo()">👨🏼</span> <br> ANIMEST -->
-             <span id="theo" onclick="killTheo()">🦝</span> <br>
+            <!-- <span id="theo" onclick="killTheo()">👨🏼</span> <br> NOEL -->
+             <span id="theo" onclick="killTheo()">⛄</span> <br>
             <span id="consigne">Théo est très content d'être parmi nous, ne cliquez surtout pas sur théo.</span>
         </div>
         <div class="isolation-eni">
             <span>Voici Hugues</span> <br>
-            <!-- <span id="hugues" onclick="getHugues(this)">👦🏾</span> <br>  ANIMEST-->
-             <span id="hugues" onclick="getHugues(this)">🗼</span> <br>
+            <!-- <span id="hugues" onclick="getHugues(this)">👦🏾</span> <br>  NOEL-->
+             <span id="hugues" onclick="getHugues(this)">🎄</span> <br>
             <span id="consigne">Hugues adore se cacher dans ce site, trouve le <span id="hugues-count">5</span> fois et il sera content !</span>
         </div>
     </div>
@@ -44,10 +45,10 @@
                 <div class="choix-coureurs"> 
                     <!-- &nbsp;<img class="choix-coureur-1" onclick="select_coureur(1)" src="img/course/linos.jpg">&nbsp;
                     &nbsp;<img class="choix-coureur-2" onclick="select_coureur(2)" src="img/course/spiderman.png">&nbsp;
-                    &nbsp;<img class="choix-coureur-3" onclick="select_coureur(3)" src="img/course/sadhamster.png">&nbsp;  ANIMEST-->
-                    &nbsp;<img class="choix-coureur-1" onclick="select_coureur(1)" src="fetes/animest/Logo_ANIMEST.png">&nbsp;
-                    &nbsp;<img class="choix-coureur-2" onclick="select_coureur(2)" src="fetes/animest/Tanu boutiques.png">&nbsp;
-                    &nbsp;<img class="choix-coureur-3" onclick="select_coureur(3)" src="fetes/animest/tanu_cosmo1(1).png">&nbsp;
+                    &nbsp;<img class="choix-coureur-3" onclick="select_coureur(3)" src="img/course/sadhamster.png">&nbsp;  NOEL-->
+                    &nbsp;<img class="choix-coureur-1" onclick="select_coureur(1)" src="fetes/noel/noel.png">&nbsp;
+                    &nbsp;<img class="choix-coureur-2" onclick="select_coureur(2)" src="fetes/noel/sapin.png">&nbsp;
+                    &nbsp;<img class="choix-coureur-3" onclick="select_coureur(3)" src="fetes/noel/reindeer.png">&nbsp;
 
                 </div>
                 <input type="button" value="C'est parti !" onclick="commencer_course()">
@@ -56,22 +57,22 @@
             </div>
             <div class="contestants">
                 <div id="candidat-1">
-                    <!-- <img class="coureur" src="img/course/linos.jpg"> ANIMEST -->
-                    <img class="coureur" src="fetes/animest/Logo_ANIMEST.png"> <br>
-                    <!-- <img class="vehicule" src="img/course/mcqueen.png"> ANIMEST -->
-                     <img class="vehicule" src="fetes/animest/Affiche Anim'Est 2026 - 312x288.png">
+                    <!-- <img class="coureur" src="img/course/linos.jpg"> NOEL -->
+                    <img class="coureur" src="fetes/noel/noel.png"> <br>
+                    <!-- <img class="vehicule" src="img/course/mcqueen.png"> NOEL -->
+                     <img class="vehicule" src="fetes/noel/traineau.png">
                 </div>
                 <div id="candidat-2">
-                    <!-- <img class="coureur" src="img/course/spiderman.png"> ANIMEST  -->
-                    <img class="coureur" src="fetes/animest/Tanu boutiques.png"> <br>
-                    <!-- <img class="vehicule" src="img/course/rainbowdash.png"> ANIMEST -->
-                     <img class="vehicule" src="fetes/animest/Affiche Anim'Est 2026 - 312x288.png">
+                    <!-- <img class="coureur" src="img/course/spiderman.png"> NOEL  -->
+                    <img class="coureur" src="fetes/noel/sapin.png"> <br>
+                    <!-- <img class="vehicule" src="img/course/rainbowdash.png"> NOEL -->
+                     <img class="vehicule" src="fetes/noel/patin_a_glace.png">
                 </div>
                 <div id="candidat-3">
-                    <!-- <img class="coureur" src="img/course/sadhamster.png">  ANIMEST -->
-                    <img class="coureur" src="fetes/animest/tanu_cosmo1(1).png"> <br>
-                    <!-- <img class="vehicule" src="img/course/oiseau.png"> ANIMEST -->
-                     <img class="vehicule" src="fetes/animest/Affiche Anim'Est 2026 - 312x288.png">
+                    <!-- <img class="coureur" src="img/course/sadhamster.png">  NOEL -->
+                    <img class="coureur" src="fetes/noel/reindeer.png"> <br>
+                    <!-- <img class="vehicule" src="img/course/oiseau.png"> NOEL -->
+                     <img class="vehicule" src="fetes/noel/cadeaux.png">
                 </div>
                 <div id="gagnant"></div>
             </div>

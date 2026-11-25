@@ -70,7 +70,7 @@ imageParent.appendChild(image);
 var bouffonTitle = document.getElementById("title-bouffon");
 bouffonTitle.textContent = gens[randomBouffon].name;
 
-// ANIMEST
+// NOEL
 // var bouffonHeader = document.getElementById("header-bouffon");
 // if (gens[randomBouffon].gen == "F") bouffonHeader.textContent = "Bouffonne du jour";
 

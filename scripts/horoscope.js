@@ -18,18 +18,17 @@ function showBalance() {
     texte.textContent = "Né de la fusion du service financier et du service informatique, nous avons la joie et l’honneur de vous présenter Robin Bouthier, un bébé 100 % Telecom, qui a pointé le bout de son nez lundi 12 octobre à 20h33. Robin et sa maman se portent bien. Et, fait suffisamment rare pour être souligné, le papa a lâché son clavier pour se consacrer pleinement au pouponnage !"
 }
 
-// function showScorpion() { ANIMEST
-//     const texte = document.getElementById("texte-Scorpion");
-//     texte.textContent = "YES I BOUG MWEN ..! m'en Blanc , mais grand maman mwen ka rété Martinique ... pou mwen pani diférence ... les antilles c'est les antilles ...! Pani chèn en pied a présen .... En ké Ba'w fos pou Tiré drapo là sa !!!! bleu blanc rouge  ka sévi divisé !! Big up pou tou moun ki ni le yé ouvé ! tché bey boug mwen !"
-// }
-
-
 function showScorpion() {
     const texte = document.getElementById("texte-Scorpion");
-    texte.textContent = "Anim'Est c'est la convivialité, l'amour des autres, et les moments partagés en famille !"
+    texte.textContent = "YES I BOUG MWEN ..! m'en Blanc , mais grand maman mwen ka rété Martinique ... pou mwen pani diférence ... les antilles c'est les antilles ...! Pani chèn en pied a présen .... En ké Ba'w fos pou Tiré drapo là sa !!!! bleu blanc rouge  ka sévi divisé !! Big up pou tou moun ki ni le yé ouvé ! tché bey boug mwen !"
 }
 
 function showPoissons() {
     const texte = document.getElementById("texte-Poissons");
     texte.textContent = "RECETTE : Ingrédients : 2 ŒUFS 1 PLAT À ŒUF Étapes : Mettre un œuf dans le plat à œuf Mettre au four à 350 degrés Sortir, faire couler le deuxième œuf Mmh, c'est prêt ! Bonne dégustation !"
+}
+
+function showSagittaire(){
+    const texte = document.getElementById("texte-Sagittaire");
+    texte.innerHTML = "Bien sûr ! Voici dix idées d'activités à faire pour Noël : <br /> - Acheter des cadeaux à Loan, elle le mérite <br /> - Faire des décorations fait maison, pour pouvoir les mettre dans l'appartement de Loan <br /> - Acheter un sapin de Noël, pour l'appartement de Loan <br /> - Décorer le sapin ! Mais pas chez Loan parce que ça elle veut le faire toute seule ! <br /> - Faire un bonhomme de neige, pour faire plaisir à Loan qui a les mains trop froides pour ça <br /> - Faire une bataille de boules de neige, mais sans défaire le brushing de Loan ! <br /> - Faire des gâteaux de Noël pour Loan, miam elle a faim ! <br /> - Chanter des chansons de Noël, mais faut pas le faire trop fort sinon on n'entendra plus la belle voix de Loan <br /> - Faire une photo avec le Père Noël, Loan n'a jamais eu l'occasioin de le rencontrer <br /> - Regarder des films de Noël, comme : Le Grinch (Loan) vole Noël (à Emma)"
 }

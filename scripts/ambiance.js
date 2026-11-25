@@ -35,11 +35,11 @@ function spin_heli(image) {
 }
 
 function morph(image) {
-    // image.src = "img/arthur/flag_fr.png"; ANIMEST
-    image.src = "fetes/animest/Affiche Anim'Est 2026 - sans texte.png"
+    // image.src = "img/arthur/flag_fr.png"; NOEL
+    image.src = "fetes/noel/mariah.jpeg"
     spinfast(image);
-    // let sound = new Audio('sounds/arthur/hymne_fr.mp3'); ANIMEST
-    let sound = new Audio('fetes/animest/ojamajo_doremi.mp3');
+    // let sound = new Audio('sounds/arthur/hymne_fr.mp3'); NOEL
+    let sound = new Audio('fetes/noel/noel.mp3');
     sound.volume = 1.0;
     sound.play();
 }
