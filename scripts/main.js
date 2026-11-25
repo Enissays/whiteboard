@@ -190,7 +190,8 @@ function bigsound() {
 }
 
 function nosound() {
+    random_time = Math.floor(Math.random() * (60000 - 5000) + 5000);
     setTimeout(function(){
         bigsound();
-    }, 3000);
+    }, random_time);
 }
